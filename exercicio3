@@ -1,0 +1,46 @@
+
+<?php
+class Produto{
+  public $nome;
+  public $preco;
+  public $quantidade;
+  public $pagar;
+ public $desconto;
+  public function Produto($nome,$preco,$quantidade){
+    $this->nome = $nome;
+    $this->preco= $preco;
+    $this-> quantidade = $quantidade;
+    $this->pagar = $this->preco * $this->quantidade;
+      if($this->quantidade >=11 and $this->quantidade <=20){
+        $this->desconto= "10%";
+        $desconto = ($this->pagar*10)/100;
+        $this->pagar = $this->pagar - $desconto;
+        
+      }
+      else 
+      if($this->quantidade >=21 and $this->quantidade<=50){
+        $this->desconto= "20%";
+        $desconto = ($this->pagar*20)/100;
+        $this->pagar = $this->pagar - $desconto;
+      }
+      else
+      if($this->quantidade >50){
+        $this->desconto= "25%";
+        $desconto = ($this->pagar*25)/100;
+        $this->pagar = $this->pagar - $desconto;
+      }
+      else{
+        $this->desconto = 0;
+      }
+  }
+}
+$produto1 = new Produto("farinha",5.70,40
+);
+  print_r($produto1);
+
+$produto2 = new Produto("ovo",6.00,55);
+  print_r($produto2);
+
+$produto3 = new Produto("manteiga",3.75,30);
+  print_r($produto3);
+  ?>
