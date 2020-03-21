@@ -1,0 +1,11 @@
+Automóvel:
+veículos que tem por fonalidade o transporte de pessoas ou cargas, sem o auxilio de animais.
+É movido a motor e necessita de condutor, freio, acelerador, embreagem, rodas...
+
+Objetos:
+
+ -> condutor: extremamente necessario para o funcionamento do carro, pois é o responsável por acionar os outros equipamentos do veiculo
+ -> freio: utilizado para parar o carro, o que não ocorreria tão facilmente sem.
+ -> acelerador: usado para fazer o veiculo se movimentar.
+ -> embragem: muda as marchas do veiculo.
+ -> rodas: responsável pela locomoção do veiculo.
