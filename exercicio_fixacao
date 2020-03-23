@@ -1,0 +1,42 @@
+<?php
+class carro{
+  public $mod;
+  public $velmax;
+  public $veltual;
+
+public function carro($mod,$velmax){
+  $this->modelo = $mod;
+  $this->velmax = $velmax;
+  echo "{$this->setModelo()} \n";
+  $this->ligar();
+  $this->acelerar();
+  $this->reduzir();
+  $this->parar();
+  $this->desligar();
+}
+  public function ligar(){
+      echo"Carro ligado \n";
+  }
+  public function desligar(){
+    echo "Carro Desligado \n ";
+  }
+  public function acelerar(){
+    $this->velatual = $this->velmax;
+    echo "Acelerando \nVelocidade = {$this->velatual} km/h \n";
+  }
+  public function setModelo(){
+    return $this->modelo;
+  }
+  public function reduzir(){
+    $this->velatual = $this->velatual/2;
+    echo"Reduzindo velocidade! \nVelocidade = {$this->velatual} km/h \n";
+  }
+  public function parar(){
+    $this->velatual = 0;
+    echo "Carro parado \nVelocidade = {$this->velatual} km/h\n";
+  }
+
+}
+
+$carro1 = new carro ("Camaro",100);
+?>
